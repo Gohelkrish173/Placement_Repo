@@ -1,0 +1,46 @@
+Final Interview in Internship :-
+
+1. explain Your Current Project in the Internship and real live application?
+2. Give me a Project Structure in the React which you use in the Project.
+3. What is DI and it's type?
+4. How many way we resolve DI?
+5. Diff Between Scoped and Transient?
+6. Give me the Example of Transient?
+7. What is the pipeline?
+8. What is the Middleware?
+9. how Authentication and Authorization work?
+10. what is Authentication and Authorization?
+11. Write query of find the name of person which salary is minimum.
+example : select Top 1 name, Min(salary) as s from Salary_person order by s acse;
+12. Write a Program of find the value of which day we buy share and which day we sell in the week to give the maximum profit.
+example : [8,3,15,1,27,81,5] -> Buy Index : 3 , Sell Index : 5
+13. Wrtie The Program for given pattern.
+example : n = 3
+  *
+ * *
+* * *
+14. What is async-await? how it work?
+15. how the below code works and which thread runs where?
+Main(){
+	Line 1
+	Line 2
+	await method2();
+	Line 3
+	Line 4
+}
+Method2(){
+	Line1
+	Line2
+	Line3
+}
+-> ans :
+Main Thread : runs Line1 and Line2 then it free in this code.
+New Thread - 1 : runs Line1, Line2 and Line3 of Method2.
+New Thread - 2 : runs Line3 and Line 4 of Main Thread.
+16. What is yield keyword?
+18. What is Driven .net?
+19. What is Reference Type and Value Type?
+20. What is Static keyword?
+21. What is Static Constructor?
+22. What is Diff Between Static and Readonly?
+23. can we change static value?
