@@ -48,3 +48,4 @@ New Thread - 2 : runs Line3 and Line 4 of Main Thread.
 25. diff between string and StringBuilder?
 26. Diff between IEnumrable and IQuerryable?
 27. what is the use of ref, out and in keywords?
+28. what is diff between convert.ToString() and ToString()?

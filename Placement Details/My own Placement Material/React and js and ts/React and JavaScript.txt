@@ -1,0 +1,101 @@
+1. What is JavaScript?
+2. What is the use of JavaScript in WebPages?
+3. Can javascript have the concept like thread? if yes then how many thread is javascript is?
+4. What are the different data types in JavaScript?
+5. What is Difference Between == and ===?
+6. What is the difference between null and undefined?
+7. Can we use super in JavaScript? 
+8. Difference between let vs var vs const?
+9. What is the use of “this” keyword in JavaScript? 
+10. What is Strict in JavaScript?
+11. What is Hoisting in JS?
+12. What is coercion in JS?
+13. What is Pass By Value and Pass By Reference in javascript?
+14. What is Symbol in the JavaScript?
+15. what is NaN property in JavaScript?
+16. What is Higher Order Function?
+17. what is Currying in JavaScript?
+18. what is Closures in JavaScript?
+19. What is the temple Literals in the javascript?
+20. What is DOM in JavaScript? 
+21. Calculate and Display Count of ** Tags:**
+22. implement Password Show/Hide Toggle in javaScript.
+23. what is the diff between typeof and instanceof in javascript?
+24. what is the for,for..in,and for...of in javascript?
+25. How does the switch statement work in JavaScript?
+26. What is scope in JavaScript?
+27. Function declaration vs expression?
+28. What is lexical scope?
+29. What is an IIFE in javascript?
+30. What is event bubbling and capturing?
+31. What are event delegation and propagation?
+32. What is a prototype and prototype inheritance in javascript?
+33. What is memoization?
+34. What are modules (import/export)?
+35. What are generators?
+36. throw vs console.error in javascript?
+37. What is CORS?
+38. What is Fetch in javascript?
+39. What is the Axios?
+40. How Axios and Fetch work internally in the javascript?
+41. What is Call,apply and bind in JavaScript?
+42. What is map, filter, where, include and reduce in JavaScript?
+43. What is use of Spread Operator in JavaScript? explain with example. 
+44. What is Destructuring in JavaScript? explain with example.
+45. Explain Debouncing and Throttling. explain with the example.
+46. What are Arrow Functions?
+47. What is a Callback Function?
+48. What is the Event Loop?
+49. What is Promise in the JavaScript? explain with example.
+50. how promise work in javascript?
+51. What is the Asynchronous in the javascript?
+52. Difference between Synchronous and Asynchronous JavaScript?
+53. What is Async and await in javascript?
+54. How async and await work in the javascript internally?
+55. explain callStack, Web API, callback Queue, microtask Queue? how it can perform internally b'coz of single thread?
+56. What is the difference between LocalStorage, SessionStorage, and Cookies?
+
+--------- basic type script concepts before react ------------------------------
+
+57. what is typescript?
+58. diff between javascript and typescript?
+59. why use typescript insted of javascript?
+60. what is the syntax diff between javascript and typescript?
+61. what is the interface in the ts and what is the use of it?
+62. class in the ts?
+63. what is Compotion in ts? and it's type with example.
+64. What is Awaited<Type>,Partial<Type>,Requiered<Type>,ReadOnly<Type>,Record<Type> in ts? explain with example.
+65. What is the Pick<> in the ts? explain with example.
+66. What is the Omit<> in the ts? explain with example.
+67. What is the Enum in ts?
+68. what is the type of any and never in ts? exlain with example.
+69. what is the namespace in the ts? explain with example.
+70. what is /// directives in ts?
+71. what is the Keyof in ts?
+72. what is the Exclude<> and Extract<> in ts?
+
+---------------------- React ---------------------------------------------------
+
+73. What is React?
+74. Class Component in the React?
+75. What is the use of package-lock.json and package.json file in the react?
+76. what is the use of tsconfig.json?
+77. what is node_module?
+78. what is export and import keyword?
+79. how react create a Page in the Browser Internally?
+80. what is Fragement? explain with example and how it work internally.
+81. what is FiberTree? explain with example.
+82. What is Real DOM and Virtual DOM in the React? how it work internally. 
+83. how many type of hooks?
+84. what is react-router-dom in react?
+85. What is Routing in Routing?
+86. What is BrowserRouter, Routes and Route in the React?
+87. how to BrowserRouter,Routes and Route work internally?
+88. what is the use of useState? and how it work internally?
+89. what is the diff between ()=>{} and ()=>({}) ?
+90. what is the useEffect? and how it work internally? and also explain it's condition of []?
+91. what is the useRef? explain with example?
+92. what is the diff between useRef and useState?
+93. what is the use of useContext? explain with example.
+94. what is the custom hook in the react? and how to create and use in the react?
+95. explain all ES6 Feautures?
