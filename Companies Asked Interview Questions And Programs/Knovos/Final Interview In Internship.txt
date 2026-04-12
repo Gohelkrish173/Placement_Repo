@@ -44,3 +44,4 @@ New Thread - 2 : runs Line3 and Line 4 of Main Thread.
 21. What is Static Constructor?
 22. What is Diff Between Static and Readonly?
 23. can we change static value?
+24. can we write multiple finally in multiple catch blocks in single try block?
