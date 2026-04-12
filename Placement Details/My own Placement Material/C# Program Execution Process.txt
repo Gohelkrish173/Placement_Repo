@@ -1,0 +1,176 @@
+Process : 
+
+1. Create File and Write a demo c# code.
+
+2. Compile phase :
+
+execute below command
+- dotnet build
+
+-> internal work:
+
+	- Lexical Analysis : Breaks code into tokens (class, static, Main, etc.)
+	- Syntax Analysis : Builds Syntax Tree (AST)
+	- Semantic Analysis : Type checking, Variable validation , Method resolution
+	- Optimization (basic)
+	- Method resolution
+
+-> Output : Program.dll
+
+3. Assembly Generation :
+- The output .dll or .exe is a Portable Executable (PE) file.
+
+- Intermediate Code -> Intermediate Instruction.
+- Metadata -> Types , Methods, references.
+- Manifest -> Assembly info
+- Resources -> Images, strings
+
+4. Metadata & Manifest :
+-> Metadata describes everything:
+
+Classes
+Methods
+Properties
+References
+
+- CLR uses this instead of header files (like C++)
+
+5. Execution Starts (Host + CLR Boot)
+
+execute command:
+- dotnet run
+
+-> internally :
+1. dotnet host (dotnet.exe) starts
+2. Loads : CoreCLR (runtime) , Your Assembly
+
+6. CLR Initialization : 
+-> CLR sets up:
+	-AppDomain / AssemblyLoadContext
+	-Thread pool
+	-Garbage Collector
+	-Security system
+
+7. Assembly Loading :
+->CLR loads:
+
+	-Your main assembly
+	-Referenced assemblies (System.*, etc.)
+->Uses:
+	-Class Loader
+
+8. Verification (Type Safety Check)
+-> CLR verifies IL:
+	-No illegal memory access
+	-Type-safe operations
+	-Stack correctness
+
+If fails → runtime error ❌
+
+9. JIT Compilation (IL → Native Code)
+-> JIT (Just-In-Time Compiler):
+	- Converts IL → Machine Code
+	- Happens method-by-method
+
+example:
+Main() → JIT compiled → executed
+Console.WriteLine() → JIT compiled when called
+
+Type of JIT :
+
+| Type       | Description                  |
+| ---------- | ---------------------------- |
+| Pre-JIT    | Compiled before execution    |
+| Normal JIT | Method-by-method             |
+| Econo JIT  | Removes unused compiled code |
+
+
+10. Thread Execution Starts
+-> CLR creates Main Thread
+Executes: Program.Main()
+
+11. Memory Allocation (Stack vs Heap)
+📌 Stack:
+	- Method calls
+	- Local variables
+	- Fast
+📌 Heap:
+	-Objects (new)
+	-Managed by GC
+
+12. Runtime Services (CLR Magic)
+✔ Garbage Collection (GC)
+	-Tracks unused objects
+	-Frees memory automatically
+
+-> Generations:
+
+	- Gen 0 → short-lived
+	- Gen 1
+	- Gen 2 → long-lived
+
+13. Interoperability (If Needed)
+If your code uses:
+	- [DllImport("user32.dll")]
+👉 CLR uses:
+	- P/Invoke
+	- Calls unmanaged code (C/C++)
+
+14. Execution Continues :
+-> Methods JIT compiled as needed
+-> Memory allocated/deallocated
+-> Threads managed
+ 
+15. Garbage Collection Cycle
+-> Triggered when:
+	-Heap is full
+	-Explicit call (GC.Collect())
+-> Steps:
+	-Mark reachable objects
+	-Remove unreachable
+	-Compact heap
+
+16. Async/Await (Internal Reality 🔥)
+await Task.Delay(1000);
+
+-> Internally :
+	- Converted into state machine
+	- Uses ThreadPool
+	- Continuation scheduled
+
+17. Program Termination : 
+-> When:
+	- Main() completes
+	- All foreground threads end
+
+-> CLR performs:
+	- Finalizers (~Destructor)
+	- Memory cleanup
+	- Process exit
+
+Full Flow :
+C# Code (.cs)
+     ↓
+Roslyn Compiler
+     ↓
+IL Code (MSIL)
+     ↓
+Assembly (.dll / .exe)
+     ↓
+dotnet host starts
+     ↓
+CLR Loaded
+     ↓
+Assembly Loaded
+     ↓
+Verification
+     ↓
+JIT Compilation
+     ↓
+Machine Code
+     ↓
+Execution (CPU)
+     ↓
+GC + Runtime Services
+     ↓
+Program Ends
