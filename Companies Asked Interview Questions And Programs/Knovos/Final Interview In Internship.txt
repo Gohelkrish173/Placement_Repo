@@ -45,3 +45,6 @@ New Thread - 2 : runs Line3 and Line 4 of Main Thread.
 22. What is Diff Between Static and Readonly?
 23. can we change static value?
 24. can we write multiple finally in multiple catch blocks in single try block?
+25. diff between string and StringBuilder?
+26. Diff between IEnumrable and IQuerryable?
+27. what is the use of ref, out and in keywords?
